@@ -1,0 +1,42 @@
+.column {
+  min-height: calc(100vh - 160px);
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 1025px) {
+  .column {
+    padding: 0 100px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .column {
+    padding: 0 200px;
+  }
+}
+
+.form {
+  height: 100%;
+  width: 50%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px 0;
+  gap: 30px 5%;
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input, .form__textarea {
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  font-family: 'Lato', sans-serif;
+}

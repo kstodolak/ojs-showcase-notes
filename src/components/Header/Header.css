@@ -1,0 +1,37 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-color: #333;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 10;
+  color: #f9f9f9;
+}
+
+.header__logo-text {
+  margin-right: 40px;
+  text-align: left;
+  width: max-content;
+}
+
+@media only screen and (min-width: 1025px) {
+  .header {
+    padding: 20px 100px;
+  }
+
+  .header__logo-text {
+    margin-right: 100px;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .header {
+    padding: 20px 200px;
+  }
+}

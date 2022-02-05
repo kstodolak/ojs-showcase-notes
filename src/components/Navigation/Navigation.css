@@ -1,0 +1,21 @@
+.nav {
+  color: #f9f9f9;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 30%;
+}
+
+.nav__element {
+  padding: 5px 10px;
+  min-width: max-content;
+}
+
+.nav__link {
+  cursor: pointer;
+}
+
+.nav__link:hover {
+  color: #d9d9d9;
+}

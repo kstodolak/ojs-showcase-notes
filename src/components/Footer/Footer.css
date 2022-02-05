@@ -1,0 +1,35 @@
+.footer {
+  height: 80px;
+  background-color: #333;
+  color: #f9f9f9;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1025px) {
+  .footer {
+    padding: 20px 100px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .footer {
+    padding: 20px 200px;
+  }
+}
+
+.footer__part, .footer__part--no-wrap {
+  padding: 0 10px;
+}
+
+.footer__part--no-wrap {
+  width: max-content;
+}
+
+.footer__link {
+  color: #F28C28;
+  text-decoration: none;
+}
