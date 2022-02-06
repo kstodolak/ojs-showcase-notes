@@ -10,10 +10,10 @@ oRouter.routingTable = {
 }
 
 function getRendererFunction(page) {
-  return () => {
+  return (routingParameters) => {
     oRender(
       document.body,
-      page(),
+      page(routingParameters),
       true
     );
   }
