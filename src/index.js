@@ -1,13 +1,22 @@
+import { oRender } from 'ojs-core';
 import oRouter from 'ojs-router';
 import './main.css';
-import mainViewRenderer from './renderers/mainViewRenderer';
-import noteFormViewRenderer from './renderers/noteFormViewRenderer';
-
-// oRouter.defaultView = Main;
+import Main from './pages/Main';
+import NewNote from './pages/NewNote';
 
 oRouter.routingTable = {
-    ['/']: mainViewRenderer,
-    ['/form']: noteFormViewRenderer,
+  ['/']: getRendererFunction(Main),
+  ['/form']: getRendererFunction(NewNote),
+}
+
+function getRendererFunction(page) {
+  return () => {
+    oRender(
+      document.body,
+      page(),
+      true
+    );
+  }
 }
 
 oRouter.route();
